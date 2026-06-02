@@ -59,10 +59,14 @@ The Action writes generated test files to the repository and reports how many we
 
 ## Part of the claude autonomous-rail suite
 
-- [claude-pr-review](https://github.com/icgriggs14/claude-pr-review) — AI PR review Action
-- [claude-changelog-action](https://github.com/icgriggs14/claude-changelog-action) — auto-changelog from git history
-- [claude-commit](https://github.com/icgriggs14/claude-commit) — AI conventional commit messages
+GitHub Actions (use in any repo today):
+- [**claude-pr-review**](https://github.com/icgriggs14/claude-pr-review) — AI code review on every PR
+- [**claude-changelog-action**](https://github.com/icgriggs14/claude-changelog-action) — auto-changelog & release notes from git history
 - **claude-test-writer** — AI unit test generation (this repo)
+
+npm CLI companions (coming soon to npm):
+- `npx claude-pr-review` — run AI PR review from the command line
+- `npx claude-commit` — AI-powered conventional commit messages
 
 ## Support
 
