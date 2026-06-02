@@ -1,0 +1,34 @@
+name: 'Claude Test Writer'
+description: 'AI-generated unit tests for your JavaScript/TypeScript source files using Claude Haiku'
+author: 'icgriggs14'
+
+branding:
+  icon: 'check-square'
+  color: 'blue'
+
+inputs:
+  anthropic_api_key:
+    description: 'Anthropic API key (BYOK — provide via repository secret)'
+    required: true
+  source_glob:
+    description: 'Glob pattern for source files to generate tests for'
+    required: false
+    default: 'src/**/*.js'
+  framework:
+    description: 'Test framework: jest | vitest | mocha (auto-detected if omitted)'
+    required: false
+    default: ''
+  output_dir:
+    description: 'Directory to write test files into (defaults to same directory as source)'
+    required: false
+    default: ''
+
+outputs:
+  generated_count:
+    description: 'Number of test files generated'
+  generated_files:
+    description: 'Comma-separated list of generated test file paths'
+
+runs:
+  using: 'node20'
+  main: 'src/action.js'

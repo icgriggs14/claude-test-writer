@@ -1,0 +1,50 @@
+{
+  "name": "claude-test-writer",
+  "version": "1.0.0",
+  "description": "AI-generated unit tests for JavaScript/TypeScript using Claude Haiku — npx claude-test-writer src/foo.js",
+  "main": "src/generator.js",
+  "bin": {
+    "claude-test-writer": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo 'No tests yet — use npm run smoke' && exit 0",
+    "smoke": "node bin/cli.js --help"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "ai",
+    "unit-test",
+    "test-generator",
+    "jest",
+    "vitest",
+    "mocha",
+    "cli",
+    "developer-tools"
+  ],
+  "author": "icgriggs14",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icgriggs14/claude-test-writer.git"
+  },
+  "homepage": "https://github.com/icgriggs14/claude-test-writer#readme",
+  "bugs": {
+    "url": "https://github.com/icgriggs14/claude-test-writer/issues"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "commander": "^12.1.0",
+    "glob": "^11.0.0",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "action.yml",
+    "README.md"
+  ]
+}
